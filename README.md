@@ -15,7 +15,7 @@ Dentro del curso se implementan varias características tanto en HTML como en CS
 
 # Resultado
 
-A continuación se muestra el resultado de la replica del template de la plataforma de Platzi video, si quiere ver la pagina por usted mismo puede entrar al [siguiente link](https://crissud.github.io/PlatziTemplate/).
+A continuación se muestra el resultado de la replica del template de la plataforma de Platzi video, si quiere ver la pagina por usted mismo puede entrar al [siguiente link](https://crissud.github.io/PlatziVideoTemplate/index.html).
 
 <div align='center'>
     <img  src='https://i.imgur.com/jYlCVcv.png'>
