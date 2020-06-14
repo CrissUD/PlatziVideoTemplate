@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* ------------------------------------- VARIABLES ------------------------------------- */
+:root{
+    --color-dark-blue: #151B31;
+    --color-white: #fff;
+    --color-gray: #aaa;
+    --color-black: #444;
+    --color-purpure: #9B55FF;
+    --color-light-blue:#1BE7C3;
+    --color-red: #E01622;
+    --color-pink: #ED3084;
+}
+/* ------------------------------------- REGLAS GENERALES ------------------------------------- */
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+figure{
+    margin: 0;
+}
+
+img{
+    width: 100%;
+}
+/* ------------------------------------- REGLAS NAV LEFT ------------------------------------- */
+.container{
+    display: grid;
+    grid-template-columns: 320px 1fr;
+}
+
+.nav-left{
+    background: var(--color-dark-blue);
+    color: var(--color-white);
+    padding: 20px;
+}
+
+.nav-left h1{
+    font-size: 45px;
+}
+
+.nav-left span{
+    background: linear-gradient(to right, #E01622, #ED3084); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-left h5{
+    font-size: 20px;
+    margin: 10px auto;
+}
+
+.nav-left ol{
+    padding: 20px;
+    margin: 0;
+}
+
+.nav-left li{
+    margin: 20px auto;
+}
+
+.nav-left a{
+    display: block;
+    text-decoration: none;
+    color: var(--color-white);
+    margin: 20px;
+}
+
+.nav-left a:hover{
+    color: var(--color-gray);
+}
+
+.comment figure,
+.friends figure{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.comment img, 
+.friends img{
+    width: 150%;
+}
+
+.video-options{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.friend{
+    display: flex;
+    margin: 20px auto;
+    align-items: center;
+}
+/* ------------------------------------- REGLAS MAIN SECTION ------------------------------------- */
+.video-play{
+    position: relative;
+}
+
+.cover{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background: rgba(0, 0, 0, .4);
+}
+
+.cover img{
+    cursor: pointer;
+}
+
+.video-description{
+    border-bottom: 1px solid #aaa;
+}
+
+.video-title{
+    color: var(--color-black);
+    padding: 20px;
+}
+
+.video-title h2,
+.comment-content h4{
+    margin-bottom: 0;
+}
+
+.video-title p,
+.comment-content p{
+    margin-top: 2px;
+}
+
+.video-title p{
+    color: var(--color-gray);
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.video-options{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.video-options, .video-options div{
+    padding: auto 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.video-list{
+    margin-right: 40px;
+}
+
+.video-options a{
+    margin: auto 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px;
+    width: 100px;
+}
+
+.add{
+    background: linear-gradient(to right, #E01622, #ED3084); 
+}
+
+.video-list a:nth-of-type(2),
+.video-list a:nth-of-type(3){
+    color: var(--color-black);
+    padding: 0px;
+}
+
+.video-options img{
+    width: 30px;
+}
+
+.video-tags a:nth-of-type(1){
+    background: var(--color-purpure);
+}
+
+.video-tags a:nth-of-type(2){
+    background: var(--color-light-blue);
+}
+
+.video-tags a:nth-of-type(3){
+    background: var(--color-red);
+}
+
+.video-tags a:nth-of-type(4){
+    background: var(--color-pink);
+}
+/* ------------------------------------- REGLAS MAIN DASHBOARD ------------------------------------- */
+.main-dashboard{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 490px);
+    color: var(--color-black);
+}
+
+.div-input{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.div-input span{
+    background: #f2f2f2;
+    padding: 5px;
+    border-radius: 8px 0 0 8px;
+}
+
+.div-input span img{
+    width: 30px;
+    border-radius: 100%;
+}
+
+.div-input input{
+    background: #f2f2f2;
+    height: 40px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    width: 90%;
+}
+
+.comment{
+    display: flex;
+    align-items: center;
+}
+
+.other-videos{
+    padding: 20px;
+    justify-self: center;
+}
+
+.video img{
+    width: 350px;
+    border-radius: 20px;
+}
+
+.video p{
+    margin-top: 0px;
+    margin-left: 20px;
+}
+/* ------------------------------------- REGLAS RESPONSIVE ------------------------------------- */
+@media(max-width:800px){
+    .container{
+        grid-template-columns: 100%;
+    }
+    .nav-left{
+        display: none;
+    }
+
+    .video-tags{
+        margin-top: 40px;
+    }
+
+    .video-tags a{
+        margin-top: 20px;
+    }
+}
